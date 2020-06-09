@@ -27,7 +27,8 @@ ENV S3FS_ARGS=
 
 USER root
 RUN apt-get update && \
-    apt install -y s3fs
+    apt install -y s3fs && \
+    apt install -y tini
 USER 1001
 
 # Test compile
